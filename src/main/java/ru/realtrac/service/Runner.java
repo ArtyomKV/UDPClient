@@ -23,17 +23,17 @@ public class Runner implements Runnable {
 
             while (true) {
                 byte[] mac = new byte[6];
-                mac[0] = 111;
+                mac[0] = 101;
                 mac[1] = 112;
                 mac[2] = 113;
                 mac[3] = 114;
                 mac[4] = 115;
                 mac[5] = 116;
                 byte packetType = 1;
-                int id = 1;
-                double time = 8989.55;
-                long latitude = -77;
-                long longitude = -77;
+                int id = 2;
+                double time = 9000.56;
+                long latitude = -78;
+                long longitude = -78;
 
                 byte[] idBuf = ByteBuffer.allocate(4).putInt(id).array();
                 byte[] timeBuf = ByteBuffer.allocate(8).putDouble(time).array();
